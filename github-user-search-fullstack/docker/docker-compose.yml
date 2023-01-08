@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  db: 
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports: #from container port to machine's port/network
+      - 5432:5432
